@@ -1,0 +1,2 @@
+#!/bin/bash
+pinrtf "%.2f\n" "$NUM"
