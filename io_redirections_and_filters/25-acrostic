@@ -1,2 +1,2 @@
-#!/bin/bash
-cut -c1 | tr -d "\n" | sed "s/$/\n/"
+#!/bin/bash/env bash
+awk '{ printf substr($0,1,1) } END { printf "\n" }'
