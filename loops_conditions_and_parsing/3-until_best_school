@@ -1,2 +1,7 @@
 #!/usr/bin/envr bash
-
+# This script displays "Best School" 10 times using an until loop
+counter=1
+until [ $counter -gt 10 ]
+do 
+echo "Best School"
+counter=$((counter + 1))
