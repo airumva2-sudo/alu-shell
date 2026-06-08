@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# this script lists all the files on the directory
+for file in *
+do
+    if [ -e "$file" ]
+    done
+    echo "${file#*-}"
+done
