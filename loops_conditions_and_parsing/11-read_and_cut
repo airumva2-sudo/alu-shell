@@ -1,3 +1,6 @@
 #!/usr/bin/env bash
-# Prints username, user id, and home directory from /etc/passwd.
-cut -d':' -f1,3,6 /etc/passwd
+# Reads /etc/passwd line by line and prints username, uid, and home directory.
+while IFS= read -r line
+do
+    echo "$line" | cut -d':' -f1,3,6
+done < /etc/passwd

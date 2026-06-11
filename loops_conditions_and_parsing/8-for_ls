@@ -2,5 +2,5 @@
 # Lists files in the current directory; for each file prints everything after the first '-'.
 for file in *
 do
-    echo "$file" | cut -d'-' -f2-
+    echo "${file#*-}"
 done

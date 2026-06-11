@@ -1,2 +1,2 @@
-#!/bin/bash/env bash
-awk '{ printf substr($0,1,1) } END { printf "\n" }'
+#!/bin/bash
+cut -c1 | paste -sd '' -

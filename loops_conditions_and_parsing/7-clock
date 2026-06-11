@@ -1,10 +1,14 @@
 #!/usr/bin/env bash
-# Prints hours 0..12 and minutes 0..59 using for loops.
-for h in {0..12}
+# Prints hours (0..12) and minutes (0..59) using while loops.
+h=0
+while [ $h -le 12 ]
 do
-    echo $h
-done
-for m in {0..59}
-do
-    echo $m
+    echo "Hour: $h"
+    m=0
+    while [ $m -le 59 ]
+    do
+        echo $m
+        m=$((m + 1))
+    done
+    h=$((h + 1))
 done

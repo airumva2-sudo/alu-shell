@@ -1,8 +1,12 @@
 #!/usr/bin/env bash
-# Describes the state of the file "school" in the current directory.
+# Gives information about the file "school" in the current directory.
 if [ -e school ]
 then
     echo "school file exists"
+    if [ -d school ]
+    then
+        echo "school is a directory"
+    fi
     if [ -s school ]
     then
         echo "school file is not empty"
