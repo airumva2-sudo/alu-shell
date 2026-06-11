@@ -1,7 +1,3 @@
 #!/usr/bin/env bash
-# This script processes /etc/passwd line by line using cut inside a while loop
-
-while read -r line
-do
-    echo "$line" | cut -d':' -f1,3,6
-done < /etc/passwd
+# Prints username, user id, and home directory from /etc/passwd.
+cut -d':' -f1,3,6 /etc/passwd

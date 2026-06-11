@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
-# priinting out all running processes even for other users
-
-ps -auxf
+# Lists all running processes in a user-oriented format with hierarchy.
+ps auxf

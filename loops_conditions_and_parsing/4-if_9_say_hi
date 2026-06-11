@@ -1,13 +1,11 @@
 #!/usr/bin/env bash
-# This script displays "Best School" 10 times, and say hi on the 9th one
-
-counter=1
-while [ $counter -le 10 ]
-do 
-echo "Best School"
-if [ $counter -eq 9 ] 
-then
-echo "Hi"
-fi
-counter=$((counter + 1))
+# Loops 1..10 and prints "Hi" on 9, otherwise the number.
+for i in {1..10}
+do
+    if [ $i -eq 9 ]
+    then
+        echo "Hi"
+    else
+        echo $i
+    fi
 done

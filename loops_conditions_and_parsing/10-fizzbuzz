@@ -1,17 +1,18 @@
 #!/usr/bin/env bash
-# this script prints numbers from 1 to 100 following the FizzBuzz rules
+# Prints FizzBuzz from 1 to 100, separated by spaces on a single line.
 for i in {1..100}
 do
-if [ $((i % 3)) -eq 0 ] && [ $((i % 5)) -eq 0 ]
+    if [ $((i % 15)) -eq 0 ]
     then
-        echo "FizzBuzz"
+        echo -n "FizzBuzz "
     elif [ $((i % 3)) -eq 0 ]
     then
-        echo "Fizz"
+        echo -n "Fizz "
     elif [ $((i % 5)) -eq 0 ]
     then
-        echo "Buzz"
+        echo -n "Buzz "
     else
-        echo "$i"
+        echo -n "$i "
     fi
 done
+echo
